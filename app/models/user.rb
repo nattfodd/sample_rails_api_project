@@ -1,4 +1,4 @@
-class User < ActiveRecord
+class User < ApplicationRecord
   has_many :containers
-  has_many :files
+  # containers_has_many :files
 end

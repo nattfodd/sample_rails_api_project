@@ -5,6 +5,8 @@ gem 'rails', '~> 5.1.6'
 gem 'pg', '~> 0.21'
 gem 'puma', '~> 3.7'
 
+gem 'container_record', path: '../container_record'
+
 group :development, :test do
   gem 'pry-byebug'
 end
