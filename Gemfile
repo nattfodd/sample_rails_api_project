@@ -8,6 +8,7 @@ gem 'puma', '~> 3.7'
 gem 'container_record', path: '../container_record'
 
 group :development, :test do
+  gem 'pry'
   gem 'pry-byebug'
 end
 

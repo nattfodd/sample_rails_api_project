@@ -1,6 +1,8 @@
 class Container < ContainerRecord::ExternalDatabase
-# class Container < ApplicationRecord
+  include ContainerRecord::Container
+
   belongs_to :user
-  has_many :files
+  # has_many :attachments
+  has_many_external :attachments, strored_in: self
   # database_name [ :table_name, :name, :id ]
 end
