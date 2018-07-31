@@ -1,4 +1,3 @@
-# binding.pry
-
-# ContainerRecord.configure do |config|
-# end
+ContainerRecord.configure do |config|
+  config.external_database_classes = [ExternalDatabase]
+end
